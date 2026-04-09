@@ -1,37 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Data Visualization Activity on SVG</title>
+    <title>Data Visualization Activity on SVG</title>
 
-	<style type="text/css">
-		#header-title {
-			font-size: 24px;
-		}
+    <style type="text/css">
+      #header-title {
+        font-size: 24px;
+      }
 
-		#visualization-activity {
-			width: 600px;
-			height: 500px;
-		}
+      #visualization-activity {
+        width: 600px;
+        height: 500px;
+      }
 
-		/* YOUR CSS CODE WILL GO HERE */
+      /* YOUR CSS CODE WILL GO HERE */
+    </style>
+  </head>
 
+  <body>
+    <h1 id="header-title">In-Class Acitivity by Youngwook Yang</h1>
 
-	</style>
-</head>
+    <svg id="visualization-activity">
+      <!-- YOUR SVG CODE WILL GO HERE -->
+      <line x1="100" y1="360" x2="600" y2="360" stroke="#ccc" />
+      <line x1="100" y1="360" x2="100" y2="40" stroke="#ccc" />
 
-<body>
-	<h1 id="header-title">
-		In-Class Acitivity by REPLACE_WITH_YOUR_NAME
-	</h1>
+      <g class="marking">
+        <line x1="95" y1="40" x2="100" y2="40" stroke="#ccc" />
+        <text x="70" y="45" text-anchor="middle" font-size="12">80,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="80" x2="100" y2="80" stroke="#ccc" />
+        <text x="70" y="85" text-anchor="middle" font-size="12">70,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="120" x2="100" y2="120" stroke="#ccc" />
+        <text x="70" y="125" text-anchor="middle" font-size="12">60,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="160" x2="100" y2="160" stroke="#ccc" />
+        <text x="70" y="165" text-anchor="middle" font-size="12">50,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="200" x2="100" y2="200" stroke="#ccc" />
+        <text x="70" y="205" text-anchor="middle" font-size="12">40,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="240" x2="100" y2="240" stroke="#ccc" />
+        <text x="70" y="245" text-anchor="middle" font-size="12">30,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="280" x2="100" y2="280" stroke="#ccc" />
+        <text x="70" y="285" text-anchor="middle" font-size="12">20,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="320" x2="100" y2="320" stroke="#ccc" />
+        <text x="70" y="325" text-anchor="middle" font-size="12">10,000</text>
+      </g>
+      <g class="marking">
+        <line x1="95" y1="360" x2="100" y2="360" stroke="#ccc" />
+        <text x="70" y="365" text-anchor="middle" font-size="12">0</text>
+      </g>
 
-	<svg id="visualization-activity">
-		<!-- YOUR SVG CODE WILL GO HERE -->
-
-
-	</svg>
-
-</body>
+      <g class="bar-with-count">
+        <rect x="120" y="68.504" width="60" height="291.496" fill="#00A84D" />
+        <text x="150" y="375" text-anchor="middle" font-size="12">
+          홍대입구
+        </text>
+      </g>
+      <g class="bar-with-count">
+        <rect x="200" y="107.66" width="60" height="252.34" fill="#00A84D" />
+        <text x="230" y="375" text-anchor="middle" font-size="12">잠실</text>
+      </g>
+      <g class="bar-with-count">
+        <rect x="280" y="145.736" width="60" height="214.264" fill="#EF7C1C" />
+        <text x="310" y="375" text-anchor="middle" font-size="12">
+          고속터미널
+        </text>
+      </g>
+      <g class="bar-with-count">
+        <rect x="360" y="197.532" width="60" height="162.468" fill="#0052A4" />
+        <text x="390" y="375" text-anchor="middle" font-size="12">서울역</text>
+      </g>
+      <g class="bar-with-count">
+        <rect x="440" y="206.916" width="60" height="153.084" fill="#00A84D" />
+        <text x="470" y="375" text-anchor="middle" font-size="12">신림</text>
+      </g>
+      <g class="bar-with-count">
+        <rect x="520" y="209.916" width="60" height="150.084" fill="#00A84D" />
+        <text x="550" y="375" text-anchor="middle" font-size="12">신도림</text>
+      </g>
+      <text x="350" y="400" text-anchor="middle" font-size="18">
+        Station Name
+      </text>
+      <text
+        x="30"
+        y="200"
+        text-anchor="middle"
+        font-size="18"
+        transform="rotate(-90, 30, 200)"
+      >
+        Entry Count
+      </text>
+    </svg>
+  </body>
 </html>
